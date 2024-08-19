@@ -118,15 +118,6 @@ var svg = d3.select("#pieChart").append("svg")
   .attr("transform", "translate(" + radius + "," + height / 2 + ")")
   .style("filter", "url(#drop-shadow)");
 
-// Append text to the center of the pie chart
-svg.append("text")
-  .attr("text-anchor", "middle")
-  .attr("dy", "0.35em")
-  .attr("font-size", "13px")  // Adjust the font size as needed
-  .attr("font-weight", "bold")
-.attr("fill", "#fff")
-  .text("Billings in 2024 Q1 and Q2");
-
 // Create Drop Shadow on Pie Chart
 var defs = svg.append("defs");
 var filter = defs.append("filter")
